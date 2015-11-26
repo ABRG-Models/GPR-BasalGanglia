@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<SpineML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.shef.ac.uk/SpineMLComponentLayer" xsi:schemaLocation="http://www.shef.ac.uk/SpineMLComponentLayer SpineMLComponentLayer.xsd">
+ <ComponentClass type="postsynapse" name="passthrough">
+  <Dynamics initial_regime="blank">
+   <Regime name="blank"/>
+   <Alias dimension="?" name="out">
+    <MathInline>w*in</MathInline>
+   </Alias>
+  </Dynamics>
+  <AnalogReceivePort dimension="?" name="in"/>
+  <AnalogSendPort name="out"/>
+  <Parameter dimension="?" name="w"/>
+ </ComponentClass>
+</SpineML>

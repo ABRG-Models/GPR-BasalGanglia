@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<SpineML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.shef.ac.uk/SpineMLComponentLayer" xsi:schemaLocation="http://www.shef.ac.uk/SpineMLComponentLayer SpineMLComponentLayer.xsd">
+ <ComponentClass type="neuron_body" name="TNleft">
+  <Dynamics initial_regime="default">
+   <Regime name="default">
+    <TimeDerivative variable="T">
+     <MathInline>0.1*(El-Er)</MathInline>
+    </TimeDerivative>
+   </Regime>
+   <StateVariable dimension="?" name="T"/>
+  </Dynamics>
+  <AnalogSendPort name="T"/>
+  <AnalogReceivePort dimension="?" name="El"/>
+  <AnalogReceivePort dimension="?" name="Er"/>
+ </ComponentClass>
+</SpineML>
