@@ -5,13 +5,13 @@
   <Parameter dimension="?" name="size"/>
   <Spatial>
    <Regime name="">
-    <Transform order="1" variable="x" dimension="??" type="translate">
+    <Transform dimension="??" type="translate" variable="x" order="1">
      <MathInline>rand()*size</MathInline>
     </Transform>
-    <Transform order="2" variable="y" dimension="??" type="translate">
+    <Transform dimension="??" type="translate" variable="y" order="2">
      <MathInline>rand()*size</MathInline>
     </Transform>
-    <Transform order="3" variable="z" dimension="??" type="translate">
+    <Transform dimension="??" type="translate" variable="z" order="3">
      <MathInline>rand()*size</MathInline>
     </Transform>
    </Regime>

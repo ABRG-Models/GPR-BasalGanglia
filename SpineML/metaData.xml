@@ -4,7 +4,7 @@
   <yPos value="3.61596"/>
   <animSpeed value="0.2"/>
   <aspectRatio value="1.66667"/>
-  <colour red="153" blue="51" green="102"/>
+  <colour blue="51" green="102" red="153"/>
   <size value="1"/>
   <tag value="8"/>
   <x3D value="133"/>
@@ -12,13 +12,13 @@
   <z3D value="54"/>
   <is_visualised value="1"/>
  </population>
- <projection destination="SNr" style="0" source="Str_D1">
-  <start x="1.785714745521545" y="3.116833209991455"/>
+ <projection destination="SNr" showlabel="0" source="Str_D1" style="0">
+  <start x="1.78571" y="3.11683"/>
   <curves>
    <curve>
-    <C1 ypos="1.251848459243774" xpos="1.833073019981384"/>
-    <C2 ypos="2.073297023773193" xpos="1.762568950653076"/>
-    <end ypos="0.3837346136569977" xpos="1.775719046592712"/>
+    <C1 xpos="1.83307" ypos="1.25185"/>
+    <C2 xpos="1.76257" ypos="2.0733"/>
+    <end xpos="1.77572" ypos="0.383735"/>
    </curve>
   </curves>
   <synapseConnection name="Str_D1 to SNr Synapse 0 weight_update"/>
@@ -28,7 +28,7 @@
   <yPos value="3.64841"/>
   <animSpeed value="0.2"/>
   <aspectRatio value="1.66667"/>
-  <colour red="153" blue="51" green="102"/>
+  <colour blue="51" green="102" red="153"/>
   <size value="1"/>
   <tag value="9"/>
   <x3D value="195"/>
@@ -36,13 +36,13 @@
   <z3D value="57"/>
   <is_visualised value="1"/>
  </population>
- <projection destination="GPe" style="0" source="Str_D2">
-  <start x="4.501086235046387" y="3.148924827575684"/>
+ <projection destination="GPe" showlabel="0" source="Str_D2" style="0">
+  <start x="4.50109" y="3.14892"/>
   <curves>
    <curve>
-    <C1 ypos="1.228295683860779" xpos="4.501086235046387"/>
-    <C2 ypos="1.988333106040955" xpos="4.492646217346191"/>
-    <end ypos="0.4262533187866211" xpos="4.492646217346191"/>
+    <C1 xpos="4.50109" ypos="1.2283"/>
+    <C2 xpos="4.49265" ypos="1.98833"/>
+    <end xpos="4.49265" ypos="0.426253"/>
    </curve>
   </curves>
   <synapseConnection name="Str_D2 to GPe Synapse 0 weight_update"/>
@@ -52,7 +52,7 @@
   <yPos value="2.08675"/>
   <animSpeed value="0.2"/>
   <aspectRatio value="1.66667"/>
-  <colour red="0" blue="0" green="255"/>
+  <colour blue="0" green="255" red="0"/>
   <size value="1"/>
   <tag value="10"/>
   <x3D value="155"/>
@@ -60,24 +60,24 @@
   <z3D value="30"/>
   <is_visualised value="1"/>
  </population>
- <projection destination="SNr" style="4" source="STN">
-  <start x="2.831373929977417" y="1.588475728163885"/>
+ <projection destination="SNr" showlabel="0" source="STN" style="4">
+  <start x="2.83137" y="1.58848"/>
   <curves>
    <curve>
-    <C1 ypos="0.7207068444587463" xpos="2.831373929977417"/>
-    <C2 ypos="1.390209913253784" xpos="2.183614015579224"/>
-    <end ypos="0.3837917447090149" xpos="2.217086553573608"/>
+    <C1 xpos="2.83137" ypos="0.720707"/>
+    <C2 xpos="2.18361" ypos="1.39021"/>
+    <end xpos="2.21709" ypos="0.383792"/>
    </curve>
   </curves>
   <synapseConnection name="STN to SNr Synapse 0 weight_update"/>
  </projection>
- <projection destination="GPe" style="4" source="STN">
-  <start x="3.579637050628662" y="1.58845057500379"/>
+ <projection destination="GPe" showlabel="1" source="STN" style="4">
+  <start x="3.57964" y="1.58845"/>
   <curves>
    <curve>
-    <C1 ypos="1.317110681662726" xpos="3.988386631011963"/>
-    <C2 ypos="0.9354499578475952" xpos="4.113375186920166"/>
-    <end ypos="0.4262306988239288" xpos="4.113375186920166"/>
+    <C1 xpos="3.98839" ypos="1.31711"/>
+    <C2 xpos="4.03771" ypos="1.34089"/>
+    <end xpos="4.11338" ypos="0.426231"/>
    </curve>
   </curves>
   <synapseConnection name="STN to GPe Synapse 0 weight_update"/>
@@ -87,7 +87,7 @@
   <yPos value="-0.073616"/>
   <animSpeed value="0.2"/>
   <aspectRatio value="1.66667"/>
-  <colour red="0" blue="255" green="0"/>
+  <colour blue="255" green="0" red="0"/>
   <size value="1"/>
   <tag value="11"/>
   <x3D value="200"/>
@@ -95,24 +95,24 @@
   <z3D value="0"/>
   <is_visualised value="1"/>
  </population>
- <projection destination="SNr" style="0" source="GPe">
-  <start x="3.65016770362854" y="-0.1141378656029701"/>
+ <projection destination="SNr" showlabel="0" source="GPe" style="0">
+  <start x="3.65017" y="-0.114138"/>
   <curves>
    <curve>
-    <C1 ypos="-0.1141378656029701" xpos="2.565996885299683"/>
-    <C2 ypos="-0.1258101314306259" xpos="3.328837871551514"/>
-    <end ypos="-0.1258101314306259" xpos="2.625389099121094"/>
+    <C1 xpos="2.566" ypos="-0.114138"/>
+    <C2 xpos="3.32884" ypos="-0.12581"/>
+    <end xpos="2.62539" ypos="-0.12581"/>
    </curve>
   </curves>
   <synapseConnection name="GPe to SNr Synapse 0 weight_update"/>
  </projection>
- <projection destination="STN" style="0" source="GPe">
-  <start x="3.888402700424194" y="0.4263888895511627"/>
+ <projection destination="STN" showlabel="0" source="GPe" style="0">
+  <start x="3.8884" y="0.426389"/>
   <curves>
    <curve>
-    <C1 ypos="0.7291908264160156" xpos="3.327646493911743"/>
-    <C2 ypos="1.140709662566351" xpos="3.412808895111084"/>
-    <end ypos="1.587610626349615" xpos="3.412808895111084"/>
+    <C1 xpos="3.32765" ypos="0.729191"/>
+    <C2 xpos="3.41281" ypos="1.14071"/>
+    <end xpos="3.41281" ypos="1.58761"/>
    </curve>
   </curves>
   <synapseConnection name="GPe to STN Synapse 0 weight_update"/>
@@ -122,7 +122,7 @@
   <yPos value="-0.11656"/>
   <animSpeed value="0.2"/>
   <aspectRatio value="1.66667"/>
-  <colour red="0" blue="255" green="255"/>
+  <colour blue="255" green="255" red="0"/>
   <size value="1"/>
   <tag value="12"/>
   <x3D value="133"/>
@@ -135,7 +135,7 @@
   <yPos value="5.80446"/>
   <animSpeed value="0.2"/>
   <aspectRatio value="1.66667"/>
-  <colour red="255" blue="243" green="0"/>
+  <colour blue="243" green="0" red="255"/>
   <size value="1"/>
   <tag value="1"/>
   <x3D value="164"/>
@@ -143,35 +143,35 @@
   <z3D value="80"/>
   <is_visualised value="1"/>
  </population>
- <projection destination="Str_D1" style="4" source="Cortex">
-  <start x="2.7828528881073" y="5.303802967071533"/>
+ <projection destination="Str_D1" showlabel="0" source="Cortex" style="4">
+  <start x="2.78285" y="5.3038"/>
   <curves>
    <curve>
-    <C1 ypos="4.815556049346924" xpos="2.636339426040649"/>
-    <C2 ypos="5.238265514373779" xpos="2.029331207275391"/>
-    <end ypos="4.116990566253662" xpos="2.025552749633789"/>
+    <C1 xpos="2.63634" ypos="4.81556"/>
+    <C2 xpos="2.02933" ypos="5.23827"/>
+    <end xpos="2.02555" ypos="4.11699"/>
    </curve>
   </curves>
   <synapseConnection name="Cortex to Str_D1 Synapse 0 weight_update"/>
  </projection>
- <projection destination="Str_D2" style="4" source="Cortex">
-  <start x="3.553622961044312" y="5.303848266601562"/>
+ <projection destination="Str_D2" showlabel="1" source="Cortex" style="4">
+  <start x="3.55362" y="5.30385"/>
   <curves>
    <curve>
-    <C1 ypos="4.612967491149902" xpos="3.546485424041748"/>
-    <C2 ypos="5.065066814422607" xpos="4.093689441680908"/>
-    <end ypos="4.147508144378662" xpos="4.147412300109863"/>
+    <C1 xpos="3.54649" ypos="4.61297"/>
+    <C2 xpos="4.29989" ypos="5.11931"/>
+    <end xpos="4.14741" ypos="4.14751"/>
    </curve>
   </curves>
   <synapseConnection name="Cortex to Str_D2 Synapse 0 weight_update"/>
  </projection>
- <projection destination="STN" style="4" source="Cortex">
-  <start x="3.168901443481445" y="5.303413391113281"/>
+ <projection destination="STN" showlabel="0" source="Cortex" style="4">
+  <start x="3.1689" y="5.30341"/>
   <curves>
    <curve>
-    <C1 ypos="3.507357835769653" xpos="3.168901443481445"/>
-    <C2 ypos="3.919955635199713" xpos="3.178010702133179"/>
-    <end ypos="2.587491178641486" xpos="3.178010702133179"/>
+    <C1 xpos="3.1689" ypos="3.50736"/>
+    <C2 xpos="3.17801" ypos="3.91996"/>
+    <end xpos="3.17801" ypos="2.58749"/>
    </curve>
   </curves>
   <synapseConnection name="Cortex to STN Synapse 0 weight_update"/>

@@ -5,13 +5,13 @@
   <Parameter dimension="?" name="rowLen"/>
   <Spatial>
    <Regime name="">
-    <Transform order="1" variable="x" dimension="??" type="translate">
+    <Transform dimension="??" type="translate" variable="x" order="1">
      <MathInline>mod(t,rowLen)</MathInline>
     </Transform>
-    <Transform order="2" variable="y" dimension="??" type="translate">
+    <Transform dimension="??" type="translate" variable="y" order="2">
      <MathInline>floor(t/rowLen)</MathInline>
     </Transform>
-    <Transform order="3" variable="t" dimension="??" type="translate">
+    <Transform dimension="??" type="translate" variable="t" order="3">
      <MathInline>t+1</MathInline>
     </Transform>
    </Regime>
