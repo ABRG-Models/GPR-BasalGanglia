@@ -44,7 +44,7 @@
         <LL:Projection dst_population="SNr">
             <LL:Synapse>
                 <OneToOneConnection>
-                    <Delay Dimension="ms">
+                    <Delay dimension="ms">
                         <FixedValue value="0"/>
                     </Delay>
                 </OneToOneConnection>
@@ -112,7 +112,7 @@
         <LL:Projection dst_population="GPe">
             <LL:Synapse>
                 <OneToOneConnection>
-                    <Delay Dimension="ms">
+                    <Delay dimension="ms">
                         <FixedValue value="0"/>
                     </Delay>
                 </OneToOneConnection>
@@ -177,7 +177,7 @@
         <LL:Projection dst_population="SNr">
             <LL:Synapse>
                 <AllToAllConnection>
-                    <Delay Dimension="ms">
+                    <Delay dimension="ms">
                         <FixedValue value="1"/>
                     </Delay>
                 </AllToAllConnection>
@@ -196,7 +196,7 @@
         <LL:Projection dst_population="GPe">
             <LL:Synapse>
                 <AllToAllConnection>
-                    <Delay Dimension="ms">
+                    <Delay dimension="ms">
                         <FixedValue value="1"/>
                     </Delay>
                 </AllToAllConnection>
@@ -257,7 +257,7 @@
         <LL:Projection dst_population="SNr">
             <LL:Synapse>
                 <OneToOneConnection>
-                    <Delay Dimension="ms">
+                    <Delay dimension="ms">
                         <FixedValue value="1"/>
                     </Delay>
                 </OneToOneConnection>
@@ -276,7 +276,7 @@
         <LL:Projection dst_population="STN">
             <LL:Synapse>
                 <OneToOneConnection>
-                    <Delay Dimension="ms">
+                    <Delay dimension="ms">
                         <FixedValue value="1"/>
                     </Delay>
                 </OneToOneConnection>
@@ -334,6 +334,25 @@
                 <FixedValue value="0"/>
             </Property>
         </Layout>
+        <LL:Projection dst_population="Cortex">
+            <LL:Synapse>
+                <OneToOneConnection>
+                    <Delay dimension="ms">
+                        <FixedValue value="12"/>
+                    </Delay>
+                </OneToOneConnection>
+                <LL:WeightUpdate name="SNr to Cortex Synapse 0 weight_update" url="Weight.xml" input_src_port="out" input_dst_port="in">
+                    <Property name="w" dimension="?">
+                        <FixedValue value="1"/>
+                    </Property>
+                </LL:WeightUpdate>
+                <LL:PostSynapse name="SNr to Cortex Synapse 0 postsynapse" url="passthrough.xml" input_src_port="out" input_dst_port="in" output_src_port="out" output_dst_port="in">
+                    <Property name="w" dimension="?">
+                        <FixedValue value="-1"/>
+                    </Property>
+                </LL:PostSynapse>
+            </LL:Synapse>
+        </LL:Projection>
     </LL:Population>
     <LL:Population>
         <LL:Neuron name="Cortex" size="6" url="WorldToBrain.xml"/>
@@ -360,7 +379,7 @@
         <LL:Projection dst_population="Str_D1">
             <LL:Synapse>
                 <OneToOneConnection>
-                    <Delay Dimension="ms">
+                    <Delay dimension="ms">
                         <FixedValue value="0"/>
                     </Delay>
                 </OneToOneConnection>
@@ -379,7 +398,7 @@
         <LL:Projection dst_population="Str_D2">
             <LL:Synapse>
                 <OneToOneConnection>
-                    <Delay Dimension="ms">
+                    <Delay dimension="ms">
                         <FixedValue value="0"/>
                     </Delay>
                 </OneToOneConnection>
@@ -398,7 +417,7 @@
         <LL:Projection dst_population="STN">
             <LL:Synapse>
                 <OneToOneConnection>
-                    <Delay Dimension="ms">
+                    <Delay dimension="ms">
                         <FixedValue value="0"/>
                     </Delay>
                 </OneToOneConnection>

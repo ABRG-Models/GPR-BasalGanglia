@@ -7,7 +7,7 @@
     <MathInline>in</MathInline>
    </Alias>
   </Dynamics>
-  <AnalogReceivePort dimension="?" name="in"/>
+  <AnalogReducePort dimension="?" name="in" reduce_op="+"/>
   <AnalogSendPort name="out"/>
  </ComponentClass>
 </SpineML>

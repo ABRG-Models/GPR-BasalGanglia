@@ -130,6 +130,17 @@
   <z3D value="0"/>
   <is_visualised value="1"/>
  </population>
+ <projection destination="Cortex" showlabel="0" source="SNr" style="0">
+  <start x="0.958365" y="-0.128206"/>
+  <curves>
+   <curve>
+    <C1 xpos="-0.93" ypos="-0.03"/>
+    <C2 xpos="-0.23" ypos="5.79"/>
+    <end xpos="2.33387" ypos="5.83969"/>
+   </curve>
+  </curves>
+  <synapseConnection name="SNr to Cortex Synapse 0 weight_update"/>
+ </projection>
  <population name="Cortex">
   <xPos value="3.1672"/>
   <yPos value="5.80446"/>
