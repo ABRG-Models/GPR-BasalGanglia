@@ -12,7 +12,7 @@
                 <FixedValue value="10"/>
             </Property>
             <Property name="c" dimension="?">
-                <FixedValue value="-0.05"/>
+                <FixedValue value="0.2"/>
             </Property>
             <Property name="a" dimension="?">
                 <FixedValue value="0"/>
@@ -80,7 +80,7 @@
                 <FixedValue value="10"/>
             </Property>
             <Property name="c" dimension="?">
-                <FixedValue value="-0.05"/>
+                <FixedValue value="0.2"/>
             </Property>
             <Property name="a" dimension="?">
                 <FixedValue value="0"/>
@@ -137,15 +137,18 @@
         </LL:Projection>
     </LL:Population>
     <LL:Population>
-        <LL:Neuron name="STN" size="6" url="LINexp.xml">
+        <LL:Neuron name="STN" size="6" url="LINlinear.xml">
+            <Property name="m" dimension="?">
+                <FixedValue value="1"/>
+            </Property>
             <Property name="p" dimension="?">
                 <FixedValue value="1"/>
             </Property>
             <Property name="tau" dimension="?">
-                <FixedValue value="5"/>
+                <FixedValue value="10"/>
             </Property>
             <Property name="c" dimension="?">
-                <FixedValue value="0.1"/>
+                <FixedValue value="0.25"/>
             </Property>
             <Property name="a" dimension="?">
                 <FixedValue value="0"/>
@@ -183,7 +186,7 @@
                 </AllToAllConnection>
                 <LL:WeightUpdate name="STN to SNr Synapse 0 weight_update" url="Weight.xml" input_src_port="out" input_dst_port="in">
                     <Property name="w" dimension="?">
-                        <FixedValue value="1"/>
+                        <FixedValue value="0.9"/>
                     </Property>
                 </LL:WeightUpdate>
                 <LL:PostSynapse name="STN to SNr Synapse 0 postsynapse" url="passthrough.xml" input_src_port="out" input_dst_port="in" output_src_port="out" output_dst_port="A">
@@ -202,7 +205,7 @@
                 </AllToAllConnection>
                 <LL:WeightUpdate name="STN to GPe Synapse 0 weight_update" url="Weight.xml" input_src_port="out" input_dst_port="in">
                     <Property name="w" dimension="?">
-                        <FixedValue value="1"/>
+                        <FixedValue value="0.9"/>
                     </Property>
                 </LL:WeightUpdate>
                 <LL:PostSynapse name="STN to GPe Synapse 0 postsynapse" url="passthrough.xml" input_src_port="out" input_dst_port="in" output_src_port="out" output_dst_port="A">
@@ -225,7 +228,7 @@
                 <FixedValue value="10"/>
             </Property>
             <Property name="c" dimension="?">
-                <FixedValue value="0.05"/>
+                <FixedValue value="0.2"/>
             </Property>
             <Property name="a" dimension="?">
                 <FixedValue value="0"/>
@@ -268,7 +271,7 @@
                 </LL:WeightUpdate>
                 <LL:PostSynapse name="GPe to SNr Synapse 0 postsynapse" url="passthrough.xml" input_src_port="out" input_dst_port="in" output_src_port="out" output_dst_port="A">
                     <Property name="w" dimension="?">
-                        <FixedValue value="-0.4"/>
+                        <FixedValue value="-0.3"/>
                     </Property>
                 </LL:PostSynapse>
             </LL:Synapse>
@@ -305,7 +308,7 @@
                 <FixedValue value="10"/>
             </Property>
             <Property name="c" dimension="?">
-                <FixedValue value="0.05"/>
+                <FixedValue value="0.2"/>
             </Property>
             <Property name="a" dimension="?">
                 <FixedValue value="0"/>
@@ -388,9 +391,12 @@
                         <FixedValue value="1"/>
                     </Property>
                 </LL:WeightUpdate>
-                <LL:PostSynapse name="Cortex to Str_D1 Synapse 0 postsynapse" url="passthrough.xml" input_src_port="out" input_dst_port="in" output_src_port="out" output_dst_port="A">
+                <LL:PostSynapse name="Cortex to Str_D1 Synapse 0 postsynapse" url="dopa.xml" input_src_port="out" input_dst_port="in" output_src_port="out" output_dst_port="A">
                     <Property name="w" dimension="?">
                         <FixedValue value="1"/>
+                    </Property>
+                    <Property name="lambda" dimension="?">
+                        <FixedValue value="0"/>
                     </Property>
                 </LL:PostSynapse>
             </LL:Synapse>
@@ -407,9 +413,12 @@
                         <FixedValue value="1"/>
                     </Property>
                 </LL:WeightUpdate>
-                <LL:PostSynapse name="Cortex to Str_D2 Synapse 0 postsynapse" url="passthrough.xml" input_src_port="out" input_dst_port="in" output_src_port="out" output_dst_port="A">
+                <LL:PostSynapse name="Cortex to Str_D2 Synapse 0 postsynapse" url="dopa.xml" input_src_port="out" input_dst_port="in" output_src_port="out" output_dst_port="A">
                     <Property name="w" dimension="?">
                         <FixedValue value="1"/>
+                    </Property>
+                    <Property name="lambda" dimension="?">
+                        <FixedValue value="0"/>
                     </Property>
                 </LL:PostSynapse>
             </LL:Synapse>
